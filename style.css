@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: dodgerblue;
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin: 0;
+}
+
+
+/* container */
+
+.container {
+    width: 85%;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/* header */
+
+header {
+    overflow: hidden;
+    padding: 50px;
+}
+
+header div h1 {
+    margin: 0;
+    float: left;
+    font-size: 3em;
+}
+
+nav {
+    font-size: 1.3em;
+    float: right;
+    margin-top: 15px;
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+
+/* image */
+
+div#image {
+    text-align: center;
+}
+
+
+/* main */
+
+main {
+    padding: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* article section*/
+
+section {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+}
+
+article {
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+article p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+/* aside */
+
+aside {
+    box-sizing: border-box;
+    width: 26%;
+    float: right;
+    background-color: rgb(59, 148, 236);
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+aside h3 {
+    background-color: #ddd;
+    margin: 10px;
+    padding: 15px;
+}
+
+aside a {
+    color: #000;
+}
+
+
+/* footer */
+
+footer {
+    padding: 20px;
+    border-top: 1px solid lightgray;
+    text-align: center;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 950px) {
+    .container {
+        width: 95%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    header div h1 {
+        text-align: center;
+        margin: 0;
+        float: none;
+        font-size: 3em;
+    }
+    nav {
+        text-align: center;
+        font-size: 1.3em;
+        float: none;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        text-align: center;
+    }
+    section {
+        width: 100%;
+        float: none;
+        box-sizing: border-box;
+    }
+    aside {
+        width: 50%;
+        float: none;
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    aside {
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        padding: 5px;
+    }
+}
